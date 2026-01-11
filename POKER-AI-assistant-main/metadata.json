@@ -1,0 +1,8 @@
+{
+  "name": "PokerPro AI Assistant",
+  "description": "Un assistente AI in tempo reale per il Texas Hold'em. Condividi il tuo schermo e ricevi consigli strategici, analisi delle probabilità e calcoli statistici tramite chat vocale fluida.",
+  "requestFramePermissions": [
+    "microphone",
+    "display-capture"
+  ]
+}
