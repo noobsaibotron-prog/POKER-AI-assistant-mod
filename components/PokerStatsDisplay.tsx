@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { PokerStatsDisplayProps } from '../types';
+import { PokerStatsDisplayProps } from '../types.ts';
 
 const Card: React.FC<{ card: string; faded?: boolean }> = ({ card, faded }) => {
     const suitChar = card.slice(-1).toLowerCase();

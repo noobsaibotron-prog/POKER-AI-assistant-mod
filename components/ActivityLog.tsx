@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { Transcript } from '../types';
+import { Transcript } from '../types.ts';
 
 interface ActivityLogProps {
     transcripts: Transcript[];

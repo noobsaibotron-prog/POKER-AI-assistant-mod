@@ -26,8 +26,8 @@ import {
   RETRY_CONFIG,
   REGION_THRESHOLDS,
   PROMPTS
-} from '../constants';
-import { pcmToGeminiAudioBlob, decodeBase64, decodeAudioData, blobToBase64 } from '../utils/audioUtils';
+} from '../constants.ts';
+import { pcmToGeminiAudioBlob, decodeBase64, decodeAudioData, blobToBase64 } from '../utils/audioUtils.ts';
 import { 
   Transcript, 
   PokerGameState, 
@@ -36,15 +36,15 @@ import {
   PokerToolArgs,
   RealtimeInput,
   GeminiConnectionError
-} from '../types';
+} from '../types.ts';
 
 // ============================================
 // HELPER: Get API Key with validation
 // ============================================
 const getApiKey = (): string => {
-  const key = import.meta.env.VITE_GEMINI_API_KEY || process.env.API_KEY;
+  const key = process.env.API_KEY;
   if (!key) {
-    throw new GeminiConnectionError('API Key non configurata. Imposta VITE_GEMINI_API_KEY in .env', 'NO_API_KEY', false);
+    throw new GeminiConnectionError('API Key non configurata', 'NO_API_KEY', false);
   }
   return key;
 };

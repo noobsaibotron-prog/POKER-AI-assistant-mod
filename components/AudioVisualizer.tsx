@@ -1,5 +1,5 @@
 import React from 'react';
-import { AudioVisualizerProps } from '../types';
+import { AudioVisualizerProps } from '../types.ts';
 
 export const AudioVisualizer: React.FC<AudioVisualizerProps> = ({ isActive }) => {
   return (

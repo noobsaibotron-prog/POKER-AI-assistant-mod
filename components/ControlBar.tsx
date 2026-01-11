@@ -1,6 +1,6 @@
 import React from 'react';
-import { ControlBarProps } from '../types';
-import { MicrophoneIcon, StopIcon, ScreenShareIcon, VolumeIcon } from './Icons';
+import { ControlBarProps } from '../types.ts';
+import { MicrophoneIcon, StopIcon, ScreenShareIcon, VolumeIcon } from './Icons.tsx';
 
 export const ControlBar: React.FC<ControlBarProps> = ({
   isActive,

@@ -1,11 +1,11 @@
 import React, { useRef } from 'react';
-import { useLiveGemini } from './hooks/useLiveGemini';
-import { ControlBar } from './components/ControlBar';
-import { AudioVisualizer } from './components/AudioVisualizer';
-import { VideoPreview } from './components/VideoPreview';
-import { PokerStatsDisplay } from './components/PokerStatsDisplay';
-import { TranscriptionLog } from './components/TranscriptionLog';
-import { PokerCardIcon, ChipIcon } from './components/Icons';
+import { useLiveGemini } from './hooks/useLiveGemini.ts';
+import { ControlBar } from './components/ControlBar.tsx';
+import { AudioVisualizer } from './components/AudioVisualizer.tsx';
+import { VideoPreview } from './components/VideoPreview.tsx';
+import { PokerStatsDisplay } from './components/PokerStatsDisplay.tsx';
+import { TranscriptionLog } from './components/TranscriptionLog.tsx';
+import { PokerCardIcon, ChipIcon } from './components/Icons.tsx';
 
 const App: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
